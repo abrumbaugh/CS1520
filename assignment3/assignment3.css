@@ -1,0 +1,35 @@
+/*styles for assignment 3*/
+
+form {
+  margin: 0 auto;
+  width: 600;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border_radius: 1em;
+  text-align: left;
+}
+
+label {
+  display: inline-block;
+  width: 170px;
+  text-align: left;
+  padding: 5px;
+}
+
+input {
+  input: 100%;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+input, textarea {
+  font: 1em sans-serif;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+  width: 100%;
+}

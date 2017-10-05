@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Assignment 2 Submission Form</title>
+    <meta name"Created By" content="Alec Brumbaugh">
+    <link rel="stylesheet" href="./css/form.css">
+  </head>
+
+  <body>
+
+    <header>
+
+    <main>
+
+      <h2 class="header">Application To Become My Friend</h2>
+
+      <section id="application_description">
+        <p>
+          This is an application to become my friend. After submitting the form,
+          I will determine if I want to become friends with you based on your
+          information.
+        </p>
+        
+      <form name="form" action="/submission-form-page" onsubmit="return validateForm()">
+
+        <fieldset>
+          <legend>Personal information:</legend>
+          <label for="name">First Name:</label>
+          <input type="text" name="firstname"><br>
+          <label for="name">Last Name:</label>
+          <input type="text" name="lastname"><br>
+          <label for="email">Email:</label>
+          <input type="text" name="user_email"><br>
+          <label for="birthday">Birthdate:</label>
+          <input type="text" name="birthday"><br>
+          <label for"city">City:</label>
+          <input type="text" name="city"><br>
+          <label for="state">State:</label>
+          <input type="text" name="state"><br>
+          <label for="gender">Gender:</label>
+          <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Miscellaneous Information:</legend>
+          <label for="sport">Favorite Sport:</label>
+          <input type="text" name="sport">
+          <div>
+            <label for="show">Favorite Show:</label>
+            <input type"text" name="show">
+          </div>
+          <div>
+            <label for="color">Favorite Color:</label>
+            <input type="text" name="color">
+          </div>
+          <label for="movie">Favorite Movie:</label>
+          <input type="text" name="movie">
+          <br>
+          <label for="sodapop">Pop or Soda:</label>
+          <input type="radio" name="sodapop" checked value="pop">Pop
+          <input type="radio" name="sodapop" value="soda">Soda
+          <div>
+            <label for="food">Moes or Chipotle:</label>
+            <input type="radio" name="food" checked value="moes">Moes
+            <input type="radio" name="food" value="chipotle">Chipotle
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message (Optional):</legend>
+          <textarea name="message" rows="10" cols="20">
+          Enter a message for me if you would like. Try to keep it friendly :)
+          </textarea>
+        </fieldset>
+
+      <button type="submit" value="Submit" onclick="return validateForm()">Submit</button>
+
+      </form>
+
+    </main>
+
+    </header>
+
+    <footer>
+      <p>&copy; Alec Brumbaugh, 2017</p>
+    </footer>
+
+    <script src="./js/form.js"></script>
+
+  </body>
+
+</html>

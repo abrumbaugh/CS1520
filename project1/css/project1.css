@@ -1,0 +1,109 @@
+form {
+  margin: 0 auto;
+  width: 600;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border_radius: 1em;
+  text-align: left;
+}
+
+label {
+  display: inline-block;
+  width: 170px;
+  text-align: left;
+  padding: 5px;
+}
+
+input {
+  input: 100%;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+input, textarea {
+  font: 1em sans-serif;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+  width: 100%;
+}
+
+.resume {
+  border-style: double;
+  border-color: black;
+  text-align: left;
+  box-sizing: border-box;
+  width: 75%;
+  position: absolute;
+  vertical-align: middle;
+  margin-left: 10%;
+}
+
+.resumeHeader {
+  margin-left: 25px;
+}
+
+section#resume > p {
+  margin-left: 50px;
+}
+
+ul li {
+  margin-left: 60px;
+}
+
+.pitt-image {
+  display: block;
+  height: auto;
+  width: auto;
+  max-height: 50px;
+  max-width: 50px;
+  background: url('https://qubeshub.org/app/site/groups/1031/uploads/Pitt_logo.png') no-repeat;
+  repeat: no-repeat;
+}
+
+.rmu-image {
+  display: block;
+  height: auto;
+  width: auto;
+  max-height: 50px;
+  max-width: 50px;
+  background: url('https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Robert_Morris_Colonials.svg/893px-Robert_Morris_Colonials.svg.png') no-repeat;
+  repeat: no-repeat;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) (was 450) */
+.row.content {height: 600px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}

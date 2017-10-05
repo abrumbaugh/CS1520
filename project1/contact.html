@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/project1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="homepage.html">Home</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+        <h4>Social Media</h4>
+        <p><a href="https://github.com/abrumbaugh">Github</a></p>
+        <p><a href="https://www.linkedin.com/in/alec-brumbaugh-809b337a/">LinkedIn</a></p>
+        <p><a href="https://www.facebook.com/alec.brumbaugh">Facebook</a></p>
+        <p><a href="https://twitter.com/alecbrumbaugh9">Twitter</a></p>
+        <p><a href="https://www.instagram.com/alecbrumbaugh9/">Instagram</a></p>
+      </div>
+      <div class="col-sm-8 text-left">
+        <h1 class="header">Contact Information</h1>
+        <hr>
+        <section id="contact-form">
+          <p>
+            Fill out this form if you would like to contact me. I will do my best to get in touch
+            as soon as I can.
+          </p>
+        <form name="form" action="mailto:arb178@pitt.edu" method="post" enctype="text/plain" onsubmit="return validateForm()">
+          <fieldset>
+            <legend>Personal information:</legend>
+            <label for="name">First Name:</label>
+            <input type="text" name="firstname"><br>
+            <label for="name">Last Name:</label>
+            <input type="text" name="lastname"><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email"><br>
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone"><br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Message:</legend>
+            <label for="subject">Subject:</label>
+            <input type="text" name="message-subject"><br><br>
+            <textarea name="message" rows="10" cols="20"></textarea>
+          </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </form>
+      </div>
+      <div class="col-sm-2 sidenav">
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p>&copy; Alec Brumbaugh, 2017</p>
+  </footer>
+
+  <script src="./js/project1.js"></script>
+
+</body>
+</html>
